@@ -222,3 +222,37 @@ form[data-theme="amour"] {
 form[data-theme="adulte"] {
   --theme-color: #805225;
 }
+
+/* 1. Configuration initiale de la transition sur les paragraphes <p> */
+.ma-forme-marron-safe p, .ma-forme-marron-hard p,
+.ma-forme-rouge-safe p, .ma-forme-rouge-hard p,
+.ma-forme-jaune-safe p, .ma-forme-jaune-hard p,
+.ma-forme-violet-safe p, .ma-forme-violet-hard p {
+  /* Permet au zoom, à la montée et à l'ombre de s'animer en douceur */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* 2. Effet pour les cartes orientées à -30deg (Toutes les cartes SAFE) */
+.ma-forme-marron-safe:hover p,
+.ma-forme-rouge-safe:hover p,
+.ma-forme-jaune-safe:hover p,
+.ma-forme-violet-safe:hover p {
+  position: relative;
+  z-index: 1;
+
+  /* On REPRÉCISE la rotation d'origine (-30deg) + le déplacement vers le haut + le zoom */
+  transform: rotate(-30deg) translateY(-50px) scale(1.10);
+  /* L'ombre magique qui prend la forme et l'orientation exacte de la carte */
+  filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.35));
+}
+
+/* 3. Effet pour les cartes orientées à 30deg (Toutes les cartes HARD) */
+.ma-forme-marron-hard:hover p,
+.ma-forme-rouge-hard:hover p,
+.ma-forme-jaune-hard:hover p,
+.ma-forme-violet-hard:hover p {
+  /* On REPRÉCISE la rotation d'origine (30deg) + le déplacement vers le haut + le zoom */
+  transform: rotate(30deg) translateY(-50px) scale(1.10);
+  /* Même ombre inclinée */
+  filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.35));
+}
