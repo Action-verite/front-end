@@ -216,11 +216,15 @@ form {
   margin: 0 auto;
   margin-top: 100px;
   padding: 20px;
-  border: 1px solid #000000;
+  border: 2px solid var(--theme-color);
+  background-color: var(--theme-color);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 input {
@@ -228,24 +232,32 @@ input {
   padding: 8px;
   margin: 8px;
   border: 1px solid #000000;
+  /* Fond blanc pour que les champs restent lisibles sur le fond de couleur */
+  background-color: #ffffff;
+  outline: none;
 }
 
+/* Thème par défaut si aucun choix n'a été fait */
 form[data-theme="default"] {
   --theme-color: #686868;
 }
 
+/* Thème Soirée */
 form[data-theme="soiree"] {
   --theme-color: #4b2ea4;
 }
 
+/* Thème Amis */
 form[data-theme="amis"] {
   --theme-color: #fff600;
 }
 
+/* Thème Amour */
 form[data-theme="amour"] {
   --theme-color: #ff0004;
 }
 
+/* Thème Adulte */
 form[data-theme="adulte"] {
   --theme-color: #805225;
 }
