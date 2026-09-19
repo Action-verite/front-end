@@ -5,7 +5,7 @@ body {
 /* Titre */
 @font-face {
   font-family: "roca-one";
-  src: url("fonts/roca/RocaOne-Rg.ttf") format("truetype"); /* Ajustez le chemin et le format (.otf = 'opentype') */
+  src: url("fonts/roca/RocaOne-Rg.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,41 +13,41 @@ body {
 /* Paragraphe */
 @font-face {
   font-family: "montserrat";
-  src: url("fonts/static/Montserrat-Medium.ttf") format("truetype"); /* Ajustez le chemin et le format (.otf = 'opentype') */
+  src: url("fonts/static/Montserrat-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Titre */
 h1 {
-  font-family: "roca-one"; /* police */
-  font-size: 96px; /* taille police */
-  font-weight: 600; /* % gras */
-  text-align: center; /* aligné au contre de la page */
-  padding: 18px; /* ecard tout autour */
+  font-family: "roca-one";
+  font-size: 96px;
+  font-weight: 600;
+  text-align: center;
+  padding: 18px;
 }
 
 /* Paragraphe */
 p {
-  font-family: "montserrat"; /* police */
-  font-size: 16px; /* taille police */
-  font-weight: 400; /* % gras */
+  font-family: "montserrat";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* groupe toute les cartes et categories */
 .card {
-  display: flex; /* flexible ≠ grid (grille) */
-  flex-direction: row; /* allignement horizontale ≠ column (colonne) */
-  justify-content: center; /* centré le contenu */
-  gap: 30px; /* espace entre 2 elements */
-  padding: 20px; /* ecard tout autour */
-  margin-top: 150px; /* marge */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 150px;
 }
 
-/* groupe carte hard / safe / categorie*/
+/* groupe carte hard / safe / categorie */
 .carte-categorie {
   display: flex;
-  flex-direction: column; /* Aligne les cartes en haut et le texte "Adulte" en bas */
+  flex-direction: column;
   align-items: center;
   gap: 50px;
   margin: 75px;
@@ -56,7 +56,7 @@ p {
 /* regroupe hard / safe */
 .boite-cartes {
   display: flex;
-  flex-direction: row; /* pour que safe /hard soit horizontal et que cartegorie reste a leurs verticale*/
+  flex-direction: row;
   gap: 50px;
 }
 
@@ -65,17 +65,12 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #805225;
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #805225,
     inset 0 0 0 9px black;
-
-  transform: rotate(-30deg); /* Rotation */
-
-  margin-right: -65px; /*raproché les cartes pour quelles se touche*/
-
-  /*taille texte*/
+  transform: rotate(-30deg);
+  margin-right: -65px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -84,14 +79,10 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #805225;
-
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #805225,
     inset 0 0 0 9px black;
-
-  /*Rotation + taille texte*/
   transform: rotate(30deg);
   font-size: 20px;
   font-weight: 500;
@@ -102,17 +93,12 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #ff0004;
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #ff0004,
     inset 0 0 0 9px black;
-
-  transform: rotate(-30deg); /* Rotation */
-
-  margin-right: -65px; /*raproché les cartes pour quelles se touche*/
-
-  /*taille texte*/
+  transform: rotate(-30deg);
+  margin-right: -65px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -121,14 +107,10 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #ff0004;
-
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #ff0004,
     inset 0 0 0 9px black;
-
-  /*Rotation + taille texte*/
   transform: rotate(30deg);
   font-size: 20px;
   font-weight: 500;
@@ -139,18 +121,12 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #fff600;
-
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #fff600,
     inset 0 0 0 9px black;
-
-  transform: rotate(-30deg); /* Rotation */
-
-  margin-right: -65px; /*raproché les cartes pour quelles se touche*/
-
-  /*taille texte*/
+  transform: rotate(-30deg);
+  margin-right: -65px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -159,14 +135,10 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #fff600;
-
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #fff600,
     inset 0 0 0 9px black;
-
-  /*Rotation + taille texte*/
   transform: rotate(30deg);
   font-size: 20px;
   font-weight: 500;
@@ -177,18 +149,12 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #4b2ea4;
-
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #4b2ea4,
     inset 0 0 0 9px black;
-
-  transform: rotate(-30deg); /* Rotation */
-
-  margin-right: -65px; /*raproché les cartes pour quelles se touche*/
-
-  /*taille texte*/
+  transform: rotate(-30deg);
+  margin-right: -65px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -197,14 +163,10 @@ p {
   padding: 50px 25px 75px;
   border-radius: 15px;
   background-color: #4b2ea4;
-
-  /* Liseré */
   box-shadow:
     inset 0 0 0 3px black,
     inset 0 0 0 6px #4b2ea4,
     inset 0 0 0 9px black;
-
-  /*Rotation + taille texte*/
   transform: rotate(30deg);
   font-size: 20px;
   font-weight: 500;
@@ -232,7 +194,6 @@ input {
   padding: 8px;
   margin: 8px;
   border: 1px solid #000000;
-  /* Fond blanc pour que les champs restent lisibles sur le fond de couleur */
   background-color: #ffffff;
   outline: none;
 }
