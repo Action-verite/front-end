@@ -1,4 +1,4 @@
-# 🎲 Action ou Vérité (Truth or Dare)
+# 🎲 Action ou Vérité 
 
 Une application web interactive et personnalisable du célèbre jeu **Action ou Vérité**, développée en **HTML5, CSS3 et JavaScript pur**.
 
