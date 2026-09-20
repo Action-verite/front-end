@@ -224,12 +224,18 @@ form[data-theme="adulte"] {
 }
 
 /* 1. Configuration initiale de la transition sur les paragraphes <p> */
-.ma-forme-marron-safe p, .ma-forme-marron-hard p,
-.ma-forme-rouge-safe p, .ma-forme-rouge-hard p,
-.ma-forme-jaune-safe p, .ma-forme-jaune-hard p,
-.ma-forme-violet-safe p, .ma-forme-violet-hard p {
+.ma-forme-marron-safe p,
+.ma-forme-marron-hard p,
+.ma-forme-rouge-safe p,
+.ma-forme-rouge-hard p,
+.ma-forme-jaune-safe p,
+.ma-forme-jaune-hard p,
+.ma-forme-violet-safe p,
+.ma-forme-violet-hard p {
   /* Permet au zoom, à la montée et à l'ombre de s'animer en douceur */
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 /* 2. Effet pour les cartes orientées à -30deg (Toutes les cartes SAFE) */
@@ -241,7 +247,7 @@ form[data-theme="adulte"] {
   z-index: 1;
 
   /* On REPRÉCISE la rotation d'origine (-30deg) + le déplacement vers le haut + le zoom */
-  transform: rotate(-30deg) translateY(-50px) scale(1.10);
+  transform: rotate(-30deg) translateY(-50px) scale(1.1);
   /* L'ombre magique qui prend la forme et l'orientation exacte de la carte */
   filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.35));
 }
@@ -252,7 +258,46 @@ form[data-theme="adulte"] {
 .ma-forme-jaune-hard:hover p,
 .ma-forme-violet-hard:hover p {
   /* On REPRÉCISE la rotation d'origine (30deg) + le déplacement vers le haut + le zoom */
-  transform: rotate(30deg) translateY(-50px) scale(1.10);
+  transform: rotate(30deg) translateY(-50px) scale(1.1);
   /* Même ombre inclinée */
   filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.35));
+}
+
+.btn-debut {
+  display: block;
+  text-decoration: none;
+  padding: 20px 28px;
+  background-color: #339700;
+  border-radius: 20px;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 150px auto 0;
+  width: fit-content;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-debut:hover {
+  background-color: #027516;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 46, 164, 0.3);
+}
+
+.btn-debut:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(75, 46, 164, 0.2);
+}
+
+.btn-debut:focus-visible {
+  outline: 3px solid #000000;
+  outline-offset: 3px;
+}
+
+.titre-petit {
+  font-size: 68px;
 }
